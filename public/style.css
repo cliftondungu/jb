@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu .hamburger {
+    display: none;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.8s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    z-index: 500 !important;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/* container */
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80vh 60vh 50vh 60vh 8vh;
+    gap: 5px;
+    padding: 2px;
+}
+
+.container > div{
+    text-align: center;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+/* about */
+.about {
+    background-image: url("/images/photo.jpeg");
+    overflow: hidden;
+    image-rendering: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about h1 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 30px;
+    padding: 40px;
+    margin: 0 170px;
+}
+/* end of about */
+
+/* columns */
+.columns {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background-color: #fff;
+    gap: 40px;
+}
+
+.columns > .column {
+    grid-template-rows: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 2%;
+}
+.column:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.column h2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    background-color: bisque;
+    margin-bottom: 5px;
+}
+
+.column ul {
+    padding: 25px;
+}
+
+.column ul li {
+    list-style-type: disc;
+}
+
+.column ol {
+    padding: 25px;
+}
+
+.column ol li {
+    list-style-type: decimal;
+}
+/* end of columns */
+
+
+/* blog */
+.blog {
+    background-color: lavender; 
+}
+
+
+.blog .blog_display {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 30px;
+    height: 30vh;
+    width: 70%;
+    margin: auto;
+}
+
+.blog .blog_display h2 {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.blog .blog_display p {
+    padding: 5 20px;
+}
+/* end of blog */
+
+/* footer */
+.footer {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 40px;
+    background-color: black;
+    color: #fff;
+}
+
+.footer > .foot {
+    grid-template-rows: 40vh;
+    margin: 2%;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.foot:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer .foot h2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.foot ul {
+    margin: 10px 30px;
+    padding: 20px;
+}
+
+.foot p {
+    margin: 10px 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 15px;
+}
+
+.foot ul li {
+    list-style-type: disc;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/* end of footer */
+
+/* bottom end footer */
+.copy {
+    color: #fff;
+    background: #4c9e9e;
+}
+
+.login {
+    height: 80vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url("photo.jpeg");
+    overflow: hidden;
+    image-rendering: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login .page {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform-origin: center center;
+    transform: translateX(calc((100% / 2) * (-1))) translateY(calc((100% / 2) * (-1)));
+    width: 30%;
+}
+
+.page h1 {
+    text-align: center;
+    border-bottom: 1px solid green;
+}
+
+.page form {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin-top: 10px;
+    transform: translateX(calc((100% / 2) * (-1))) translateY(calc((100% / 2) * (-1)));
+}
+
+.login form input {
+    line-height: 20px;
+    margin: 5px;
+    font-size: larger;
+}
+
+.submit {
+    background: aqua;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+/* when the window screen is less than 500px */
+@media screen and (max-width: 500px) {
+    /* the top navigation menu */
+    .menu li:not(:last-child) {display: none;}
+    .menu li a.hamburger {
+      float: right;
+      display: flex;
+    }
+
+    /* toggle menu */
+    /* The "responsive" class is added to the menu with JavaScript when the user clicks on the icon. */
+    .menu.responsive {position: relative; display: block;}
+    .menu.responsive a.hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* container */
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 60vh auto 50vh auto 8vh;
+        gap: 5px;
+        padding: 2px;
+        justify-content: center;
+    }
+
+    /* about */
+    .about p {
+        font-size: 20px;
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    /* columns */
+    .columns {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50vh 50vh 50vh;
+        background-color: #fff;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .columns > .column {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        margin: 2%;
+    }
+    .column:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .column h2 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 4px;
+        background-color: bisque;
+        margin-bottom: 5px;
+    }
+    
+    .column ul {
+        padding: 25px;
+    }
+    
+    .column ul li {
+        list-style-type: disc;
+    }
+    
+    .column ol {
+        padding: 25px;
+    }
+    
+    .column ol li {
+        list-style-type: decimal;
+    }
+    /* end of columns */
+
+    /* blog */
+    .blog {
+        display: grid;
+        background-color: lavender; 
+        grid-template-columns: auto;
+    }
+
+    .blog .blog_display {
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 30px;
+        height: 30vh;
+        width: 95%;
+        margin: auto;
+    }
+
+    .blog .blog_display h2 {
+        margin-top: 0;
+        padding: 5px;
+    }
+
+    .blog .blog_display p {
+        padding: 10px;
+    }
+    /* end of blog */
+
+
+    /* footer */
+    .footer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 35vh 50vh 50vh;
+        background-color: black;
+        color: #fff;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .footer > .foot {
+        margin: 2%;
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+    .foot:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .footer .foot h2 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 4px;
+        color: #fff;
+        margin-bottom: 2px;
+    }
+
+    .foot ul {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .foot p {
+        margin: 0;
+        letter-spacing: 1px;
+        line-height: 30px;
+        padding: 5px;
+    }
+
+    .foot ul li {
+        list-style-type: disc;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+
+
+    
+}

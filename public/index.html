@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarasimhareddy Chinnagouni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Chinnagouni</div>
+        <ul class="nav-links">
+            <!-- <input type="checkbox" id="checkbox_toggle" /> -->
+            <div class="menu" id="mymenu" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li class="services">
+                    <a href="#">Education</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html#education">Projects</a></li>
+                        <li><a href="index.html#education">Experience</a></li>
+                        <li>
+                            <a href="index.html#education">Blogs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Class</a></li>
+                <li class="services">
+                    <a href="#">Student Information</a>
+                    <ul class="dropdown">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Education</a></li>
+                        <li>
+                            <a href="/">Settings</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Records</a>
+                </li>
+                <li>
+                    <a href="index.html#em">Emergency</a>
+                </li>
+                <li>
+                    <a href="login.html">Login/Sign Up</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="hamburger" onclick="togMe()" > &#9776; </a>
+                </li>
+            </div>
+            <!-- <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="about" id="about">
+            <h1>ABOUT US</h1>
+            <p>My self Samarasimhareddy Chinnagouni, i am currently doing graduation at uniersity of Newhaven in stream of computer science and i am currently working on a website that includes about myself.i was born and raised in india and i am mostly
+                intersted to intract with people who are interested in gadgets and free time i love to play crickets.
+            </p>
+        </div>
+
+        <div class="columns" id="education">
+            <div class="column">
+                <h2>Education</h2>
+                <p>
+                    <ul>
+                        <li><b>Matser's </b> in computer science university of New Haven, West Haven, CT Expected graduation date may 2023.</li>
+                        <li><b>Bachelor's degree</b> in cs Bharath University, Chennal, india, Graduated May 2021 8.76/10 GPA.</li>
+                        <li><b>Intermediate MPC</b> Raos Junior College, Hydaerabad, India.</li>
+                        <li><b>SSC</b> Apex central School, Hyderabad, india.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="column">
+                <h2>Projects</h2>
+                <ol>
+                    <li>I have developed a project <b>Smart Dustbin using IOT</b> to support swachh Bharath Abhiyan in Btech.</li>
+                    <li>I have developed <b>AI Chat Bot</b> to support business models.</li>
+                    <li>I have done project <b> on webpage for fashion sales</b></li>
+                </ol>
+            </div>
+            <div class="column">
+                <h2>Experience</h2>
+                <ul>
+                    <li>I have Experience in voluntering in any type of events.</li>
+                    <li>I also participated in so many workshops and essay writings.</li>
+                    <li>I can interact with ease wit anyone because i worked in so many group projects and i played role in evwery group and i have found i can be goodteam leadership qualities.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blog">
+            <div class="blog_display">
+                <h2>Blogs</h2>
+                <p>I am interested in history, so i want to write a history kind of article in the future.<br> I am much more interested writing biography of leo messi who is my insperation and all time favourite player.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="foot">
+                <h2>Report Any Medical Issues</h2>
+                <p>
+                    <ul>
+                        <li>Covid Symptomps</li>
+                        <li>Medical Issues</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="foot" id="em">
+                <h2>Resources</h2>
+                <ul>
+                    <li>Emergency Procudures</li>
+                    <li>Connect with university Police.</li>
+                    <li>
+                        University Medical Benefits.
+                    </li>
+                    <li>
+                        Local Resources
+                    </li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h2>Locate us.</h2>
+                <p><img src="/images/location.jpg" alt="" srcset="" style="height: 24px; border: radius 5px;"> Use my Current Location</p>
+                <p><img src="/images/location.jpg" alt="" srcset="" style="height: 24px; border: radius 5px;"> Share Location</p>
+                <p><img src="/images/call.jpg" alt="" srcset="" style="height: 24px; border: radius 5px;"> Call</p>
+            </div>
+
+        </div>
+
+        <div class="copy"></div>
+    </div>
+
+    <script>
+        function togMe() {
+            var x = document.getElementById("mymenu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
